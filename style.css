@@ -1,0 +1,266 @@
+ Google Font 
+@import url('httpsfonts.googleapis.comcss2family=Poppinswght@300;400;500;600;700&display=swap');
+
+{
+    margin0;
+    padding0;
+    box-sizingborder-box;
+    font-family'Poppins',sans-serif;
+}
+
+body{
+    background#111;
+    color#fff;
+    line-height1.6;
+}
+
+ Header 
+
+header{
+    background#3d2414;
+    displayflex;
+    justify-contentspace-between;
+    align-itemscenter;
+    padding15px 8%;
+    positionsticky;
+    top0;
+}
+
+header h2{
+    color#f8d7a3;
+}
+
+nav a{
+    color#fff;
+    text-decorationnone;
+    margin-left20px;
+    transition.3s;
+}
+
+nav ahover{
+    color#d8a46b;
+}
+
+ Hero 
+
+.hero{
+    height70vh;
+    displayflex;
+    flex-directioncolumn;
+    justify-contentcenter;
+    align-itemscenter;
+    text-aligncenter;
+    backgroundlinear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url(httpsimages.unsplash.comphoto-1436491865332-7a61a109cc05w=1600) centercover;
+}
+
+.hero.small{
+    height40vh;
+}
+
+.hero h1{
+    font-size48px;
+}
+
+.hero p{
+    margin15px 0;
+    font-size18px;
+}
+
+.btn{
+    displayinline-block;
+    background#8b5e3c;
+    color#fff;
+    padding12px 25px;
+    text-decorationnone;
+    border-radius5px;
+}
+
+.btnhover{
+    background#a06b45;
+}
+
+ Sections 
+
+section{
+    padding60px 8%;
+}
+
+section h2{
+    text-aligncenter;
+    margin-bottom30px;
+    color#f8d7a3;
+}
+
+ Cards 
+
+.cards{
+    displaygrid;
+    grid-template-columnsrepeat(auto-fit,minmax(220px,1fr));
+    gap20px;
+}
+
+.card{
+    background#222;
+    padding20px;
+    border-radius10px;
+    text-aligncenter;
+}
+
+.card h3{
+    color#d8a46b;
+    margin-bottom10px;
+}
+
+ Offer 
+
+.offer{
+    background#3d2414;
+    text-aligncenter;
+}
+
+ Gallery 
+
+.gallery{
+    displaygrid;
+    grid-template-columnsrepeat(auto-fit,minmax(250px,1fr));
+    gap15px;
+}
+
+.gallery img{
+    width100%;
+    height220px;
+    object-fitcover;
+    border-radius10px;
+}
+
+ Map 
+
+iframe{
+    width100%;
+    height350px;
+    bordernone;
+    border-radius10px;
+}
+
+ Forms 
+
+form,
+.booking-form{
+    max-width600px;
+    marginauto;
+}
+
+label{
+    displayblock;
+    margin-top15px;
+}
+
+input,
+select,
+textarea{
+    width100%;
+    padding12px;
+    margin-top6px;
+    margin-bottom15px;
+    bordernone;
+    border-radius5px;
+}
+
+textarea{
+    height120px;
+}
+
+button{
+    width100%;
+    padding12px;
+    bordernone;
+    background#8b5e3c;
+    colorwhite;
+    font-size16px;
+    border-radius5px;
+    cursorpointer;
+}
+
+buttonhover{
+    background#a06b45;
+}
+
+ Phone Links 
+
+a{
+    color#f8d7a3;
+}
+
+p{
+    text-aligncenter;
+}
+
+ Footer 
+
+footer{
+    background#000;
+    text-aligncenter;
+    padding20px;
+    margin-top40px;
+}
+
+ WhatsApp Button 
+
+.whatsapp{
+    positionfixed;
+    right20px;
+    bottom20px;
+    background#25D366;
+    colorwhite;
+    text-decorationnone;
+    padding15px 20px;
+    border-radius40px;
+    font-weight600;
+    box-shadow0 5px 15px rgba(0,0,0,.4);
+}
+
+.whatsapphover{
+    background#1ebc57;
+}
+
+ Responsive 
+
+@media(max-width768px){
+
+header{
+    flex-directioncolumn;
+    gap10px;
+}
+
+nav{
+    displayflex;
+    flex-wrapwrap;
+    justify-contentcenter;
+}
+
+nav a{
+    margin8px;
+}
+
+.hero h1{
+    font-size34px;
+}
+
+.hero p{
+    font-size16px;
+}
+
+section{
+    padding40px 20px;
+}
+
+.cards{
+    grid-template-columns1fr;
+}
+
+.gallery{
+    grid-template-columns1fr;
+}
+
+}
