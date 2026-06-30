@@ -3,137 +3,97 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flight Booking | Bengaluru International Airlines</title>
-<link rel="stylesheet" href="style.css">
+<title>Bengaluru International Airlines</title>
+<style>
+  body {margin:0;font-family:Arial, sans-serif;background:#000;color:#eee;}
+  header,section,footer {padding:20px;text-align:center;}
+  header {background:#3b2a1a;color:#fff;}
+  nav a {color:#fff;margin:0 10px;text-decoration:none;}
+  .hero {padding:60px 20px;background:#1a1a1a;}
+  .hero h1 {font-size:2em;color:#d2a679;}
+  .menu,.offers,.gallery,.reviews,.map,.contact {background:#2a2a2a;margin:20px 0;border-radius:8px;}
+  h2 {color:#d2a679;}
+  .gallery img {width:100%;max-width:250px;margin:10px;border-radius:8px;}
+  .reviews p {font-style:italic;}
+  form input,form textarea {width:90%;padding:10px;margin:5px;border:none;border-radius:4px;}
+  form button {padding:10px 20px;background:#d2a679;color:#000;border:none;border-radius:4px;}
+  .cta {position:fixed;bottom:20px;right:20px;}
+  .cta a {display:block;background:#25D366;color:#fff;padding:15px;border-radius:50%;text-decoration:none;font-size:20px;}
+  footer {background:#3b2a1a;color:#fff;}
+  @media(max-width:600px){
+    .hero h1{font-size:1.5em;}
+    nav{display:block;}
+  }
+</style>
 </head>
-
 <body>
 
 <header>
-    <h2>Bengaluru International Airlines</h2>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="booking.html">Booking</a>
-    </nav>
+  <h1>Bengaluru International Airlines</h1>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#offers">Offers</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#map">Location</a>
+    <a href="#contact">Contact</a>
+    <a href="booking.html">Bookings</a>
+  </nav>
 </header>
 
-<section class="hero small">
-
-<h1>Book Your Flight</h1>
-
-<p>Fast • Secure • Comfortable</p>
-
+<section class="hero">
+  <h1>Fly High from Devanahalli</h1>
+  <p>Serving students, families, and local residents with care.</p>
 </section>
 
-<section>
-
-<h2>Flight Booking Details</h2>
-
-<form class="booking-form">
-
-<label>Full Name</label>
-<input type="text" placeholder="Enter your name" required>
-
-<label>Phone Number</label>
-<input type="tel" placeholder="Enter phone number" required>
-
-<label>Email</label>
-<input type="email" placeholder="Enter email">
-
-<label>Trip Type</label>
-<select>
-<option>One Way</option>
-<option>Round Trip</option>
-</select>
-
-<label>From</label>
-<input type="text" placeholder="Departure City">
-
-<label>To</label>
-<input type="text" placeholder="Destination City">
-
-<label>Departure Date</label>
-<input type="date">
-
-<label>Return Date</label>
-<input type="date">
-
-<label>Passengers</label>
-<select>
-<option>1 Passenger</option>
-<option>2 Passengers</option>
-<option>3 Passengers</option>
-<option>4 Passengers</option>
-<option>5+ Passengers</option>
-</select>
-
-<label>Travel Class</label>
-<select>
-<option>Economy</option>
-<option>Premium Economy</option>
-<option>Business</option>
-<option>First Class</option>
-</select>
-
-<button type="submit">Confirm Booking</button>
-
-</form>
-
+<section id="menu" class="menu">
+  <h2>Menu Highlights</h2>
+  <p>Delicious onboard meals and snacks curated for all ages.</p>
+  <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Airline meal" style="width:90%;max-width:400px;border-radius:8px;">
 </section>
 
-<section>
-
-<h2>Why Book With Us?</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>✔ Secure Booking</h3>
-<p>100% safe online booking process.</p>
-</div>
-
-<div class="card">
-<h3>✔ Best Prices</h3>
-<p>Affordable fares for students and families.</p>
-</div>
-
-<div class="card">
-<h3>✔ 24×7 Support</h3>
-<p>Customer care available anytime.</p>
-</div>
-
-</div>
-
+<section id="offers" class="offers">
+  <h2>Daily Offers</h2>
+  <p>Special discounts for students and family packages every day!</p>
+  <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Discount travel" style="width:90%;max-width:400px;border-radius:8px;">
 </section>
 
-<section>
-
-<h2>Need Help?</h2>
-
-<p>
-📞 <a href="tel:+919876543210">+91 98765 43210</a><br><br>
-
-📞 <a href="tel:+919123456789">+91 91234 56789</a>
-</p>
-
-<p>
-<a class="btn" href="https://wa.me/919876543210">
-Book via WhatsApp
-</a>
-</p>
-
+<section id="gallery" class="gallery">
+  <h2>Photo Gallery</h2>
+  <img src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Airplane">
+  <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cabin">
+  <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Food">
 </section>
+
+<section id="reviews" class="reviews">
+  <h2>Customer Reviews</h2>
+  <p>"A wonderful experience for our family trip!"</p>
+  <p>"Affordable and comfortable for students."</p>
+</section>
+
+<section id="map" class="map">
+  <h2>Location Map</h2>
+  <iframe src="https://maps.google.com/maps?q=Kempegowda%20International%20Airport%20Devanahalli&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="250"></iframe>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name"><br>
+    <input type="email" placeholder="Your Email"><br>
+    <textarea placeholder="Message"></textarea><br>
+    <button type="submit">Send</button>
+  </form>
+  <p>Call us: <a href="tel:+919876543210">+91 98765 43210</a></p>
+</section>
+
+<div class="cta">
+  <a href="https://wa.me/919876543210">💬</a>
+</div>
 
 <footer>
-
-<p>© 2026 Bengaluru International Airlines</p>
-
+  <p>&copy; 2026 Bengaluru International Airlines</p>
 </footer>
-
-<a href="https://wa.me/919876543210" class="whatsapp">
-WhatsApp Booking
-</a>
 
 </body>
 </html>
